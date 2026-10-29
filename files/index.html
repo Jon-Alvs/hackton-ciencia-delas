@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ciência Delas: Margaret Hamilton e a Apollo 11</title>
+<meta name="description" content="Conheça as contribuições científicas de mulheres da computação e jogue a missão da Apollo 11.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div id="fatos" role="region" aria-label="Fato curioso do dia"><b>Fato do dia:</b><span id="fato-txt"></span><button id="fato-next" aria-label="Ver outro fato">↻</button></div>
+  <nav aria-label="Principal"><a href="#inicio">Início</a><a href="#historia">História</a><a href="#jogo">Jogo</a><a href="#feedback">Feedback</a></nav>
+</header>
+<main>
+<div class="hero"><section id="inicio">
+  <h1>Ciência Delas</h1>
+  <p class="lead">Mulheres não só enfrentaram barreiras: elas criaram tecnologia. Conheça o que fizeram e jogue para entender como funciona.</p>
+  <div class="cards">
+    <article class="card on"><div class="em" aria-hidden="true">🚀</div><h3>Margaret Hamilton</h3><p>Software da Apollo 11</p><a class="btn" href="#historia">Conhecer a história</a></article>
+    <article class="card off"><div class="em" aria-hidden="true">🔢</div><h3>Ada Lovelace</h3><p>Em breve</p></article>
+    <article class="card off"><div class="em" aria-hidden="true">⚓</div><h3>Grace Hopper</h3><p>Em breve</p></article>
+    <article class="card off"><div class="em" aria-hidden="true">📡</div><h3>Hedy Lamarr</h3><p>Em breve</p></article>
+  </div>
+</section></div>
+
+<section id="historia">
+  <div id="stage" aria-live="polite">
+    <div id="slide"></div>
+    <div class="ctrl"><button id="prev" aria-label="Slide anterior">←</button><div id="dots" aria-hidden="true"></div><button id="next" aria-label="Próximo slide">→</button></div>
+  </div>
+</section>
+
+<section id="jogo">
+  <h2>Missão Apollo 11</h2>
+  <p>Execute as tarefas antes que o tempo acabe. Priorize as roxas.</p>
+  <div class="hud"><span>Pontos: <b id="g-score">0</b></span><span>Tempo: <b id="g-time">45</b>s</span><span>Vidas: <b id="g-lives">❤❤❤</b></span>
+  <label><input type="checkbox" id="g-safe" checked> Proteção de Hamilton</label></div>
+  <div id="g-load" title="Carga do computador"><i></i></div>
+  <div id="g-queue"></div>
+  <p id="g-msg" role="status">Clique em “Iniciar missão” para começar.</p>
+  <button class="btn" id="g-start">Iniciar missão</button>
+</section>
+
+<section id="feedback">
+  <h2>Sugestões e feedback</h2>
+  <p>Quer ver outra cientista aqui? Achou algo para melhorar? Conte para a gente.</p>
+  <form id="form" action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
+    <label>Nome (opcional)<input name="nome" autocomplete="name"></label>
+    <label>Tipo<select name="tipo"><option>Sugestão de cientista</option><option>Feedback do site</option><option>Outro</option></select></label>
+    <label>Mensagem<textarea name="mensagem" rows="4" required></textarea></label>
+    <button class="btn" type="submit">Enviar mensagem</button>
+    <p id="form-msg" role="status"></p>
+  </form>
+</section>
+</main>
+<footer><p>Ciência Delas · Hackathon · Equipe: [nomes aqui]</p>
+<p class="cores">Roxo e verde lembram o movimento sufragista; branco, a igualdade; dourado, as conquistas.</p></footer>
+<script src="fatos.js"></script><script src="script.js"></script><script src="game.js"></script>
+</body>
+</html>
