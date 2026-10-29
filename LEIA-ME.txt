@@ -1,0 +1,26 @@
+# Ciência Delas — site
+
+## Arquivos
+- `index.html`: página principal.
+- `style.css`: cores, tipografia e layout responsivo.
+- `script.js`: curiosidades, navegação da história e formulário.
+- `game.js`: jogo interativo da missão.
+- `fatos.js`: lista de curiosidades.
+- `assets/`: ilustrações SVG utilizadas no site.
+
+## Como abrir
+Abra `index.html` no navegador. Para publicar no GitHub Pages, envie todos os arquivos e a pasta `assets` para o mesmo repositório, mantendo a estrutura.
+
+## Formulário
+O formulário está preparado para o Formspree, mas o endereço ainda contém `SEU_ID_AQUI`. Substitua pelo ID real do seu formulário no Formspree para receber mensagens. Até lá, o site avisa que o envio não está configurado.
+
+## Observação
+As ilustrações e o jogo são recursos educativos. O jogo simplifica conceitos de prioridade e sobrecarga; não reproduz exatamente o software real da Apollo.
+
+
+ATUALIZAÇÃO DE CONTEÚDO
+A página agora deixa claro que Margaret Hamilton é a primeira história de uma coleção em expansão. A seção “Grandes descobertas. Muitas mulheres.” apresenta cientistas que poderão ganhar capítulos próprios: Katherine Johnson, Ada Lovelace, Marie Curie, Rosalind Franklin, Dorothy Vaughan e Chien-Shiung Wu. Os cartões estão identificados como “História em breve” para não sugerir que as biografias completas já estão publicadas.
+
+
+INTEGRAÇÃO DO JOGO DO PROJETO PARCEIRO
+A seção de jogo agora incorpora https://nicosobreira.github.io/hackton/ em um iframe e inclui um link para abrir o jogo em uma nova aba. O jogo é servido pelo repositório publicado do parceiro; para funcionar incorporado, o endereço precisa continuar público e permitir exibição em iframe. Se a moldura ficar vazia ou o jogo pedir orientação de tela, use o botão “Abrir jogo em nova aba”.
